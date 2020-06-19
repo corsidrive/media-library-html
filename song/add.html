@@ -41,14 +41,41 @@
         <form method="post" action="/song">
             <div class="form-group">
                 <label for="title">Titolo</label>
-                <input id="title" value=""  class="form-control" type="text">
+                <input id="title" value="Yesterday"  class="form-control" type="text">
             </div>
             <div class="form-group">
                 <label for="artist">Artista</label>
                 <select id="artist" class="form-control">
-                    <option selected >sconosciuto</option>
-                    <option >Mario</option>
+                    <option  >sconosciuto</option>
+                    <option selected >Lennon-McCartney</option>
                 </select>
+            </div>
+            <div class="form-group">
+                <label for="artist">Genere</label>
+                <select id="genre" class="form-control">
+                    <option  >sconosciuto</option>
+                    <option selected>Rock</option>
+                </select>
+            </div>
+
+
+            <div class="row pb-3">
+
+              <div class="col-md-6">
+              <label class="d-block"> attuale: <b>Yesturday.mp3</b></label> 
+              
+              <audio controls class="d-block">
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="artist" class="d-block">Cambia file audio</label>
+                  <input type="file" name="" id="">
+              </div>
+              </div>
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">aggiungi</button>
